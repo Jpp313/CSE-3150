@@ -1,15 +1,10 @@
 
-// Replacement: safe C-style implementation without vectors
+
 #include <iostream>
 #include <cstring>
 #include <limits>
 
-// C-style student list implementation (no std::vector) but safe memory handling
-// Functions:
-//  - addStudent: copies name to heap, stores GPA
-//  - updateGPA: updates an index's GPA
-//  - printStudent: prints a student
-//  - averageGPA: computes average
+
 
 void addStudent(const char* name, double gpa, char** names, double gpas[], int& size, int capacity) {
     if (size >= capacity) throw "List full";
@@ -142,7 +137,7 @@ int main(int argc, char* argv[]) {
         }
     } while (choice != 5);
 
-    // free all allocated names
+   
     for (int i = 0; i < size; ++i) delete[] names[i];
     delete[] names;
     delete[] gpas;
