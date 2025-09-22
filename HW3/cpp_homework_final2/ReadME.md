@@ -1,0 +1,1 @@
+I used pointers similar to how we discussed in class with the solution_temp.cpp file where I emphaiszed passing by reference into functions as this can help efficiency so the parameter does not need to be completely copied over. I also made sure to delete my memory at the end to prevent memory leaks
